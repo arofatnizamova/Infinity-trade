@@ -1,0 +1,335 @@
+:root {
+    --font-family-main: "Source Serif 4", serif;
+    --font-family-2: "SF Pro Text", Arial, sans-serif;
+    --color-corp: #ED2E35;
+}
+
+
+/* fonts */
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("./fonts/SFProText-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("./fonts/SFProText-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("./fonts/SFProText-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("./fonts/SFProText-RegularItalic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("./fonts/SFProText-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("./fonts/SFProText-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("./fonts/SFProText-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("./fonts/SFProText-SemiboldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("./fonts/SFProText-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("./fonts/SFProText-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("./fonts/SFProText-Heavy.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("./fonts/SFProText-HeavyItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    font-family: var(--font-family-main);
+    line-height: 1.2;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* typography */
+
+.text-2xl {
+    font-size: clamp(1.875rem, 1.5rem + 1.875vw, 3.75rem);
+}
+
+.text-xl {
+    font-size: clamp(1.625rem, 1.325rem + 1.5vw, 3.125rem);
+}
+
+.text-lg {
+    font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.75rem);
+}
+
+.text-md {
+    font-size: clamp(1.125rem, 1rem + 0.625vw, 1.75rem);
+}
+
+.text-sm {
+    font-size: clamp(1rem, 0.925rem + 0.375vw, 1.375rem);
+}
+
+.text-xs {
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+}
+
+.text-2xs {
+    font-size: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
+}
+
+
+/* utils */
+
+.text-corp {
+    color: var(--color-corp)
+}
+
+.text-dirt {
+    color: rgba(48, 52, 55, 1);
+}
+
+.bg-corp {
+    background: var(--color-corp);
+}
+
+.bg-blue {
+    background: #031F4F;
+}
+
+.bg-main {
+    background: #F6F2F2;
+}
+
+.ff-second {
+    font-family: var(--font-family-2);
+}
+
+.w-fit-content {
+    width: fit-content;
+}
+
+.w-max-content {
+    width: max-content !important;
+}
+
+.w-lg-fit-content {
+    width: fit-content;
+}
+
+.w-55 {
+    width: 55%;
+}
+
+.icon-size-sm {
+    height: 30px;
+}
+
+.h-strech {
+    height: stretch;
+}
+
+.btn {
+    border-radius: 8px;
+    font-family: var(--font-family-2);
+    width: 250px;
+    padding: 10px 0;
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+}
+
+.btn-corp {
+    background: var(--color-corp);
+    color: white;
+}
+
+.btn-outline-corp {
+    border: 1px solid var(--color-corp);
+}
+
+.btn-outline-white {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-long {
+    min-width: 300px;
+}
+
+.bg-corp-opacity {
+    background: rgba(40, 64, 109, 0.8);
+}
+
+
+/* bootstrap components castomization */
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover,
+.nav-item.active .nav-link {
+    color: #ED2E35;
+}
+
+.navbar-toggler-icon {
+    background-image: url('icons/main-icons/burger.svg');
+    width: 1em;
+    height: 1em;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+
+/* custom styles */
+
+.logo,
+.navbar-brand {
+    height: 70px;
+}
+
+.language-active {
+    color: #D5B23E;
+}
+
+.languages .language:not(:last-child) {
+    border-right: 1px solid rgba(0, 0, 0, 0.07);
+    padding-right: 1rem;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.bg-blur {
+    backdrop-filter: blur(15px);
+    background: rgba(217, 217, 217, 0.14);
+}
+
+.hover-scale {
+    transition: all 0.3s ease;
+}
+
+.card-animation:hover .hover-scale {
+    transform: scale(1.2);
+}
+
+.footer-logo {
+    height: 150px;
+}
+
+
+/* breackpoints */
+
+@media(max-width: 1200px) {
+    .w-lg-fit-content {
+        width: 100%;
+    }
+    .navbar {
+        border-bottom: 1px solid rgba(44, 44, 44, 0.35);
+        padding-bottom: 20px;
+    }
+    .logo,
+    .navbar-brand {
+        height: 60px;
+    }
+}
+
+@media(max-width: 990px) {
+    .dropdown-menu[data-bs-popper] {
+        top: 100%;
+        left: unset;
+        right: 0;
+        margin-top: var(--bs-dropdown-spacer);
+    }
+    .banner-img {
+        height: 450px;
+    }
+    .footer-logo {
+        height: 60px;
+    }
+}
