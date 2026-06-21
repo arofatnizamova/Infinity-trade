@@ -1,15 +1,49 @@
 $(document).ready(function() {
-    $('.file-upload-input').on('change', function() {
-        const $input = $(this);
-        const $field = $input.closest('.file-upload-field');
-        const $text = $field.find('.file-upload-text');
-
-        if (this.files && this.files.length > 0) {
-            $text.text(this.files[0].name);
-            $text.addClass('file-selected');
-        } else {
-            $text.text('Выберите файл');
-            $text.removeClass('file-selected');
+    $('.slick-slider').each(function() {
+        let slider = $(this);
+        let options = {
+            prevArrow: slider.parent().find('.slider-prev'),
+            nextArrow: slider.parent().find('.slider-next'),
+            infinite: true,
+            autoplay: true,
+            dots: false
         }
-    });
-});
+        let extraOptions = {}
+        if (slider.hasClass('team')) {
+            extraOptions = {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                centerMode: false,
+                arrows: true,
+                dots: false,
+                autoplay: true,
+                responsive: [{
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    },
+                ]
+            }
+        }
+
+        slider.slick($.extend({}, extraOptions, options));
+    })
+
+
+})

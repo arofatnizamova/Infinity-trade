@@ -159,6 +159,10 @@ a {
     background: var(--color-corp);
 }
 
+.bg-dark-dust {
+    background: #2E3440;
+}
+
 .bg-blue {
     background: #031F4F;
 }
@@ -189,6 +193,10 @@ a {
 
 .icon-size-sm {
     height: 30px;
+}
+
+.border-gold {
+    border-color: #D5B23E !important;
 }
 
 .h-strech {
@@ -302,6 +310,47 @@ a {
     height: 150px;
 }
 
+.dooble-line::before,
+.dooble-line::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.35);
+    top: 0;
+}
+
+.dooble-line::before {
+    left: 33%;
+}
+
+.dooble-line::after {
+    right: 33%;
+}
+
+.team img {
+    object-fit: cover;
+    height: 300px;
+}
+
+.number-box {
+    height: 70px;
+    width: 70px;
+    flex-shrink: 0;
+}
+
+.one-line::before {
+    position: absolute;
+    content: '';
+    background: #A7A7A7;
+    width: 1px;
+    height: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 35px;
+    z-index: -1;
+}
+
 
 /* breackpoints */
 
@@ -331,5 +380,12 @@ a {
     }
     .footer-logo {
         height: 60px;
+    }
+    .dooble-line::before,
+    .dooble-line::after {
+        display: none;
+    }
+    .border-lg-bottom {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.35);
     }
 }
