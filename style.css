@@ -167,6 +167,7 @@ a {
     background: #031F4F;
 }
 
+
 .bg-main {
     background: #F6F2F2;
 }
@@ -206,8 +207,8 @@ a {
 .btn {
     border-radius: 8px;
     font-family: var(--font-family-2);
-    width: 250px;
-    padding: 10px 0;
+    min-width: 250px;
+    padding: 10px 10px;
     font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
 }
 
@@ -351,6 +352,72 @@ a {
     z-index: -1;
 }
 
+.custom-faq-accordion {
+    background: transparent;
+}
+
+.custom-faq-accordion .accordion-item {
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+    border-radius: 0;
+    background: transparent;
+}
+
+.custom-faq-accordion .accordion-button {
+    padding: 18px 0 14px;
+    background: transparent;
+    box-shadow: none;
+    border: 0;
+    color: #111;
+    font-size: clamp(1rem, 0.925rem + 0.375vw, 1.375rem);
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+.custom-faq-accordion .accordion-button:not(.collapsed) {
+    color: #111;
+    background: transparent;
+    box-shadow: none;
+}
+
+.custom-faq-accordion .accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.custom-faq-accordion .accordion-button::after {
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    background-image: none;
+    content: '+';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    color: #111;
+    transform: none;
+}
+
+.custom-faq-accordion .accordion-button:not(.collapsed)::after {
+    content: '×';
+    transform: none;
+    font-size: 22px;
+}
+
+.custom-faq-accordion .accordion-body {
+    padding: 0 0 16px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    font-family: var(--font-family-2);
+    font-weight: 400;
+}
+
+.slider-btn {
+    z-index: 3;
+    top: 0;
+    right: 15%;
+}
+
 
 /* breackpoints */
 
@@ -358,10 +425,12 @@ a {
     .w-lg-fit-content {
         width: 100%;
     }
+
     .navbar {
         border-bottom: 1px solid rgba(44, 44, 44, 0.35);
         padding-bottom: 20px;
     }
+
     .logo,
     .navbar-brand {
         height: 60px;
@@ -375,17 +444,28 @@ a {
         right: 0;
         margin-top: var(--bs-dropdown-spacer);
     }
+
     .banner-img {
         height: 450px;
     }
+
     .footer-logo {
         height: 60px;
     }
+
     .dooble-line::before,
     .dooble-line::after {
         display: none;
     }
+
     .border-lg-bottom {
         border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    }
+
+    .slider-btn {
+        top: unset;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
     }
 }

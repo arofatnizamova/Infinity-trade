@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Trade</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-xl-block d-none border-bottom  ">
+            <div class="container">
+                <div class="row  justify-content-between d-xl-flex d-none">
+                    <div class="col-lg-4">
+                        <div class="w-100 py-4  h-100 d-flex align-items-center border-end">
+                            <address class="mb-0 text-xs">
+                                г. Ташкент, 100097, Чиланзар, 10-й квартал, офис 3/1
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="w-100 py-4  h-100 d-flex align-items-center">
+                            <a href="mailto:info@intrade.uz" class="d-flex gap-2 text-xs text-decoration-underline">
+                                <span>
+                                    info@intrade.uz
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-lg-3">
+                        <div class="w-100 py-4  h-100 d-flex align-items-center">
+                            <a href="#" class="d-flex gap-2 text-xs ">
+                                <span>
+                                    <i class="bi bi-telegram"></i>
+                                </span>
+                                <span class="text-decoration-underline">
+                                    перейти в телеграм канал
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 py-4  h-100 d-flex align-items-center justify-content-between  gap-3">
+                            <div class="social d-flex align-items-center gap-4">
+                                <a href="#">
+                                    <i class="bi bi-telegram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="languages d-flex align-items-center gap-3">
+                                <a href="#" class="language-active language">
+                                    RU
+                                </a>
+                                <a href="#" class="language">
+                                    EN
+                                </a>
+                                <a href="#" class="language">
+                                    UZ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="bg-white navbar navbar-expand-xl py-xl-0 pb-2 sticky-lg-top">
+        <div class="container ">
+            <div class="w-lg-fit-content d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img src="icons/main-icons/logo.svg" alt="" class="logo">
+                </a>
+
+                <div class="d-flex align-items-center d-xl-none gap-2">
+                    <div class="dropdown">
+                        <button class="border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            RU
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">EN</a></li>
+                            <li><a class="dropdown-item" href="#">UZ</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-magnifying-glass "></i>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-lg-auto   me-lg-3 gap-xl-5 ">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="nav-link active dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Услуги
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="import.html">Импорт под ключ</a></li>
+                                <li><a class="dropdown-item" href="export.html">Экспорт под ключ</a></li>
+                                <li><a class="dropdown-item" href="customs-clearance.html">Таможенное оформление</a></li>
+                                <li><a class="dropdown-item" href="customs-broker.html">Таможенный брокер</a></li>
+                                <li><a class="dropdown-item" href="outsourcing.html">ВЭД аутсорсинг</a></li>
+                                <li><a class="dropdown-item" href="contacts-registartion.html">Регистрация контрактов</a></li>
+                                <li><a class="dropdown-item" href="consulting.html">Таможенный консалтинг</a></li>
+                                <li><a class="dropdown-item" href="sertification.html">Содействие в сертификации</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Статьи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="border-start ps-3 h-strech d-none d-xl-flex align-items-end">
+                <button class="border-0 border-bottom d-block w-100 pe-5 ps-0 pb-2 bg-transparent">
+                    <i class="bi bi-search text-2xs"></i>
+                    <span class="opacity-50">Поиск</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <div class="position-relative rounded-5">
+                    <div class="position-absolute px-lg-5 px-4 text-white fw-bold d-flex align-items-center top-0 left-0 w-100 h-100 z-2">
+                        <div class="row gy-4 w-100 justify-content-between">
+                            <div class="col-lg-7">
+                                <div class="w-100 h-100 text-lg-start text-center">
+                                    <h1 class="text-2xl">
+                                        Импорт под ключ
+                                    </h1>
+                                    <p class="text-md my-lg-5 my-3 fw-normal">
+                                        Импорт под ключ: от контракта до вашего склада
+                                    </p>
+                                    <p class="ff-second fw-light my-lg-5 my-3 text-sm">
+                                        Берем на себя полное сопровождение поставок в Узбекистан, с соблюдением законодательства, точностью расчетов и прохождение таможни без задержек
+                                    </p>
+                                    <a href="commercial.html" class="btn btn-corp d-lg-inline-block d-none">
+                                        Получить консультацию
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <img src="images/import-page/banner-img.png" alt="" class="img-fluid w-100 rounded-5 banner-img object-fit-cover">
+                </div>
+                <a href="commercial.html" class="btn btn-corp d-lg-none d-block w-100 mt-4">
+                    Получить консультацию
+                </a>
+            </div>
+        </section>
+        <section class="bg-main py-5 my-lg-5 my-3">
+            <div class="container py-lg-5">
+                <h3 class="text-center mb-5 text-lg fw-semibold">
+                    Кому подходит эта услуга?
+                </h3>
+                <div class="row gy-5 py-lg-5">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 pe-lg-5 d-flex align-items-lg-start align-items-center gap-3">
+                            <div class="p-xl-4 p-2 border border-gold rounded-circle">
+                                <img src="icons/import-page/1.svg" alt="" class="icon-size-sm">
+                            </div>
+                            <div class="">
+                                <p class="text-sm mb-lg-2 mb-1 fw-semibold">Поставщикам оборудования </p>
+                                <p class="mb-0 opacity-75 text-xs ff-second fw-light">
+                                    Специализированное решение для ввоза медицинских и производственных линий
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100  h-100 pe-lg-5 d-flex align-items-lg-start align-items-center gap-3">
+                            <div class="p-xl-4 p-2 border border-gold rounded-circle">
+                                <img src="icons/import-page/2.svg" alt="" class="icon-size-sm">
+                            </div>
+                            <div class="">
+                                <p class="text-sm mb-lg-2 mb-1 fw-semibold">Новому бизнесу</p>
+                                <p class="mb-0 opacity-75 text-xs ff-second fw-light">
+                                    Если вы впервые ввозите товар в Узбекистан и не имеете штатного отдела ВЭД
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100  h-100 pe-lg-5 d-flex align-items-lg-start align-items-center gap-3">
+                            <div class="p-xl-4 p-2 border border-gold rounded-circle">
+                                <img src="icons/import-page/3.svg" alt="" class="icon-size-sm">
+                            </div>
+                            <div class="">
+                                <p class="text-sm mb-lg-2 mb-1 fw-semibold">Опытным импортерам </p>
+                                <p class="mb-0 opacity-75 text-xs ff-second fw-light">
+                                    Когда нужно делегировать сложную поставку или оптимизировать процессы
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 pt-5">
+            <div class="slider-wrapper position-relative pb-lg-0 pb-5">
+                <div class="container">
+                    <h3 class="mb-5 text-lg  fw-semibold text-lg-start text-center">
+                        Что входит в пакет «Под ключ»
+                    </h3>
+                </div>
+                <div class="slider-btn position-absolute d-flex gap-lg-3 gap-5">
+                    <button class="slider-prev border-0 bg-transparent">
+                        <i class="bi bi-chevron-left fs-1"></i>
+                    </button>
+                    <button class="slider-next border-0 bg-transparent">
+                        <i class="bi bi-chevron-right fs-1"></i>
+                    </button>
+                </div>
+                <div class="slick-slider services pt-lg-5 pb-lg-0 pb-3">
+                    <div class="slider-item">
+                        <div class="w-100 h-100 overflow-hidden px-2 rounded-4 position-relative">
+                            <img src="images/import-page/slider/1.png" alt="" class="img-fluid">
+                            <div class="position-absolute w-100 h-100 top-0 left-0 d-flex align-items-end p-lg-4 p-3">
+                                <div class="text-white text-sm ff-second">
+                                    <p class="fw-medium">
+                                        Регистрация в ЕЭИС ВО
+                                    </p>
+                                    <p class="mb-0 text-xs fw-light">
+                                        Официальное оформление контракта через портал ЕПИГУ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="w-100 h-100 overflow-hidden px-2 rounded-4 position-relative">
+                            <img src="images/import-page/slider/2.png" alt="" class="img-fluid">
+                            <div class="position-absolute w-100 h-100 top-0 left-0 d-flex align-items-end p-lg-4 p-3">
+                                <div class="text-white text-sm ff-second">
+                                    <p class="fw-medium">
+                                        Логистический контроль
+                                    </p>
+                                    <p class="mb-0 text-xs fw-light">
+                                        Сопровождение отгрузки и контроль товаросопроводительных документов (инвойс, упаковочный лист)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="w-100 h-100 overflow-hidden px-2 rounded-4 position-relative">
+                            <img src="images/import-page/slider/3.png" alt="" class="img-fluid">
+                            <div class="position-absolute w-100 h-100 top-0 left-0 d-flex align-items-end p-lg-4 p-3">
+                                <div class="text-white text-sm ff-second">
+                                    <p class="fw-medium">
+                                        Разрешительная база
+                                    </p>
+                                    <p class="mb-0 text-xs fw-light">
+                                        Организация содействия в получении необходимых сертификатов (СЭЗ, соответствие и др.)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="position-relative">
+                <img src="images/import-page/1.png" alt="" class="w-50 position-absolute end-0 top-0 object-fit-cover h-100 d-lg-block d-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="w-100">
+                                <h3 class="mb-5 text-lg  fw-semibold text-lg-start text-center">
+                                    Ваша выгода
+                                </h3>
+                                <img src="images/import-page/1.png" alt="" class="w-100  object-fit-cover  d-lg-none mb-5">
+                                <div class="position-relative one-line">
+                                    <div class="d-flex gap-3 align-items-center mb-5 pb-lg-2">
+                                        <div class="number-box d-flex align-items-center justify-content-center rounded-circle bg-dark-dust text-white">
+                                            <span class="text-md">01</span>
+                                        </div>
+                                        <div class="">
+                                            <p class="text-sm mb-1 fw-semibold">Финансовая безопасность</p>
+                                            <p class="opacity-75 fw-light ff-second mb-0 text-xs">
+                                                Исключаем риск переплаты пошлин и штрафов из-за неверных кодов ТН ВЭД
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3 align-items-center mb-5 pb-lg-2">
+                                        <div class="number-box d-flex align-items-center justify-content-center rounded-circle bg-dark-dust text-white">
+                                            <span class="text-md">02</span>
+                                        </div>
+                                        <div class="">
+                                            <p class="text-sm mb-1 fw-semibold">Экономия времени</p>
+                                            <p class="opacity-75 fw-light ff-second mb-0 text-xs">
+                                                Вам не нужно взаимодействовать с 
+                                                государственными органами напрямую
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3 align-items-center mb-5 pb-lg-2">
+                                        <div class="number-box d-flex align-items-center justify-content-center rounded-circle bg-dark-dust text-white">
+                                            <span class="text-md">03</span>
+                                        </div>
+                                        <div class="">
+                                            <p class="text-sm mb-1 fw-semibold">Прозрачность</p>
+                                            <p class="opacity-75 fw-light ff-second mb-0 text-xs">
+                                                Вы получаете финальную смету до начала поставки
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-main">
+            <div class="container">
+                <div class="row py-lg-5 gy-4 justify-content-between">
+                    <div class="col-lg-3">
+                        <h3 class="text-lg  fw-semibold text-lg-start text-center">
+                            Ответы на вопросы
+                        </h3>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="w-100">
+                            <div class="accordion custom-faq-accordion" id="faqAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faqHeadingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                                            Какие документы нужны для старта?
+                                        </button>
+                                    </h2>
+
+                                    <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Контракт, инвойс и спецификация
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faqHeadingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false"
+                                            aria-controls="faqCollapseTwo">
+                                            Сколько времени занимает регистрация контракта?
+                                        </button>
+                                    </h2>
+
+                                    <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            Обычно регистрация занимает от 1 до 3 рабочих дней в зависимости от сложности документов.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 text-white text-center" style="background: url('images/import-page/2.png') no-repeat center/cover;">
+            <div class="container py-lg-5">
+                <div class="row py-lg-5 justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="w-100">
+                            <h3 class="mb-5 text-xl fw-semibold  ">
+                                Готовы начать поставку?
+                            </h3>
+                            <p class="mb-5 text-md ff-second">
+                                Загрузите инвойс или описание товара
+                                и мы подготовим предварительный расчет
+                            </p>
+                            <a href="commercial.html" class="btn btn-corp  my-lg-5 my-3 ">
+                                Получить расчет импорта
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-lg-5 py-3 border-top mt-4">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <div class="w-100 h-100">
+                        <img src="icons/main-icons/logo.svg" alt="" class="img-fluid footer-logo">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="w-100">
+                        <p class="text-dirt fw-semibold text-sm">
+                            Услуги
+                        </p>
+                        <ul class="list-unstyled text-xs fw-light mb-0 ff-second opacity-75">
+                            <li class="mb-3">
+                                <a href="import.html">
+                                    Импорт под ключ
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="export.html">
+                                    Экспорт под ключ
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="customs-clearance.html">
+                                    Таможенное оформление
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="customs-broker.html">
+                                    Таможенный брокер
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="outsourcing.html">
+                                    ВЭД аутсорсинг
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="contacts-registartion.html">
+                                    Регистрация контрактов
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="consulting.html">
+                                    Таможенный консалтинг
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="sertification.html">
+                                    Содействие в сертификации
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="w-100">
+                        <p class="text-dirt fw-semibold text-sm">
+                            Ссылки
+                        </p>
+                        <ul class="list-unstyled ff-second opacity-75 text-xs fw-light mb-0">
+                            <li class="mb-3">
+                                <a href="index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="about.html">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="news.html">
+                                    Статьи
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="contacts.html">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="w-100">
+                        <p class="text-dirt fw-semibold text-sm">
+                            Контакты
+                        </p>
+                        <ul class="list-unstyled text-xs ff-second opacity-75 fw-light mb-0">
+                            <li class="mb-3 d-flex gap-1">
+                                <i class="bi bi-telephone"></i>
+                                <div class="d-flex flex-column">
+                                    <a href="tel:+998712766224" class="">
+                                        <span>+998 71 276 62 24</span>
+                                    </a>
+                                    <a href="tel:+998974909992" class="">
+                                        <span>+998 97 490 99 92</span>
+                                    </a>
+                                    <a href="tel:+998974905445" class="">
+                                        <span>+998 97 490 54 45</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <a href="mailto:info@intrade.uz" class="d-flex gap-1 ">
+                                    <i class="bi bi-envelope"></i>
+                                    <span>info@intrade.uz</span>
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <address class="d-flex gap-1 ">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>г. Ташкент, 100097, Чиланзар, 10-й квартал, офис 3/1</span>
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+    <script src="https://kit.fontawesome.com/f817facf9f.js " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script src="main.js "></script>
+</body>
+
+</html>
