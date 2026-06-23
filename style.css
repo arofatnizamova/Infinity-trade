@@ -429,6 +429,18 @@ a {
     transform: translate(-50%, -50%);
 }
 
+.form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid black;
+    padding-left: 0;
+}
+
+.form-control::placeholder {
+    color: #A6A6A6;
+    font-weight: 300;
+}
+
 /* breackpoints */
 
 @media(max-width: 1200px) {
@@ -457,6 +469,10 @@ a {
 
     .banner-img {
         height: 450px;
+    }
+
+    .banner-img.banner-img-small {
+        height: 250px;
     }
 
     .footer-logo {
